@@ -1,0 +1,14 @@
+body {
+  width: auto; }
+
+.slds-global-header_container {
+  position: inherit; }
+
+.customDropdown {
+  padding: 6px 0 0 3px; }
+
+.hide-element {
+  display: none; }
+
+.show-element {
+  display: inital; }
