@@ -1,20 +1,95 @@
-body
-  width: auto
+////////////////////
+/////Variables/////
+//////////////////
+$background-color: #16325C
+$insetColor: #16325C
+$textcolor: #fff
 
-//////////////////////////////////
-/////Lightning Design Resets/////
-////////////////////////////////
-.slds-global-header_container
-  position: inherit
+/////////////////
+/////Resets/////
+///////////////
+*
+	margin: 0
+	padding: 0
+	border: none
+	border-radius: 0
 
-.customDropdown
-  padding: 6px 0 0 3px
+html, body
+	height: 100%
+	width: 100%
+	font-family: 'Open Sans', sans-serif
+	background: $background-color
+	background: -webkit-linear-gradient(#0070D2, #16325C)
+	background: -moz-linear-gradient(#0070D2, #16325C)
+	background: -o-linear-gradient(#0070D2, #16325C)
+	background: linear-gradient(#0070D2, #16325C)
+	color: $textcolor
 
-////////////////////////////
-/////Hide & Show Rules/////
-//////////////////////////
-.hide-element
-  display: none
+input, select, textarea, button, a
+	outline: none
+	font-family: inherit
+	box-sizing: border-box
 
-.show-element
-  display: inital
+textarea
+	-webkit-overflow-scrolling: touch
+
+h1
+	font-size: 50px
+	line-height: 52px
+	font-weight: 300
+	margin-bottom: 20px
+	-webkit-font-smoothing: antialiased
+
+h2
+	font-size: 35px
+	line-height: 45px
+	font-weight: 300
+	margin-bottom: 20px
+	-webkit-font-smoothing: antialiased
+
+h3
+	font-size: 22px
+	line-height: 28px
+	font-weight: 400
+	margin-bottom: 20px
+	-webkit-font-smoothing: antialiased
+
+a
+	color: purple
+	img
+		outline-color: none
+	&:hover
+		text-decoration: none
+
+p
+	font-size: 16px
+	line-height: 24px
+	font-weight: 300
+
+/////////////////////
+/////App Styles/////
+///////////////////
+#root
+	height: 100%
+
+.App
+	display: flex
+	justify-content: center
+	flex-direction: column
+	align-items: center
+	height: 100%
+
+.clock
+	display: flex
+
+.timeUnit
+	padding: 16px
+	background-color: $insetColor
+	border-radius: 4px
+	text-align: center
+
+	&:not(:last-child)
+		margin-right: 20px
+
+	span
+		font-size: 32px

@@ -55,21 +55,21 @@ class App extends Component {
 		const clock = {...this.state.clock};
 		return (
 			<div className="App">
-				<h1>Countdown Clock</h1>
-				<div id="clockdiv">
-					<div>
+				<h1>Retail Banking Launch</h1>
+				<div className="clock">
+					<div className="timeUnit">
 						<span className="days">{clock.days}</span>
 						<div className="smalltext">Days</div>
 					</div>
-					<div>
+					<div className="timeUnit">
 						<span className="hours">{clock.hours}</span>
 						<div className="smalltext">Hours</div>
 					</div>
-					<div>
+					<div className="timeUnit">
 						<span className="minutes">{clock.minutes}</span>
 						<div className="smalltext">Minutes</div>
 					</div>
-					<div>
+					<div className="timeUnit">
 						<span className="seconds">{clock.seconds}</span>
 						<div className="smalltext">Seconds</div>
 					</div>
